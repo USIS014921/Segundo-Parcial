@@ -82,7 +82,7 @@ namespace Segundo_Parcial
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios (nombre,clave,nivel,telefono,correo,sexo,edad) Values(?nombre,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
+                string myInsertQuery = "INSERT INTO usuarios(nombre,clave,nivel,telefono,correo,sexo,edad) Values(?nombre,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Parameters.Add("?usuario", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
                 myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 20).Value = txtclave.Text;
