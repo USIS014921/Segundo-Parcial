@@ -32,6 +32,7 @@ namespace Segundo_Parcial
             txtcorreo.Enabled = false;
             lstsexo.Enabled = false;
             lstedad.Enabled = false;
+            bactualizar.Visible = false;
 
             
             try
