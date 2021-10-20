@@ -107,6 +107,7 @@ namespace Segundo_Parcial
             this.bentrar.TabIndex = 4;
             this.bentrar.Text = "Entrar";
             this.bentrar.UseVisualStyleBackColor = true;
+            this.bentrar.Click += new System.EventHandler(this.bentrar_Click);
             // 
             // dataGridView1
             // 
