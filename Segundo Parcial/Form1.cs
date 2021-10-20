@@ -156,7 +156,7 @@ namespace Segundo_Parcial
                 string eda = lstedad.Text;
 
 
-                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE idusuario = '" + usuario_modificar +"'";
+                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;

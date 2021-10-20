@@ -319,6 +319,9 @@ namespace Segundo_Parcial
             // lstsexo
             // 
             this.lstsexo.FormattingEnabled = true;
+            this.lstsexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
             this.lstsexo.Location = new System.Drawing.Point(361, 136);
             this.lstsexo.Name = "lstsexo";
             this.lstsexo.Size = new System.Drawing.Size(100, 21);
@@ -327,6 +330,17 @@ namespace Segundo_Parcial
             // lstnivel
             // 
             this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.lstnivel.Location = new System.Drawing.Point(361, 57);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
@@ -335,6 +349,40 @@ namespace Segundo_Parcial
             // lstedad
             // 
             this.lstedad.FormattingEnabled = true;
+            this.lstedad.Items.AddRange(new object[] {
+            "18\t",
+            "19\t",
+            "20",
+            "21\t",
+            "22\t",
+            "23\t",
+            "24\t",
+            "25\t",
+            "26\t",
+            "27\t",
+            "28\t",
+            "29\t",
+            "30",
+            "31\t",
+            "32\t",
+            "33\t",
+            "34\t",
+            "35\t",
+            "36\t",
+            "37\t",
+            "38\t",
+            "39\t",
+            "40",
+            "41\t",
+            "42\t",
+            "43\t",
+            "44\t",
+            "45\t",
+            "46\t",
+            "47\t",
+            "48\t",
+            "49\t",
+            "50"});
             this.lstedad.Location = new System.Drawing.Point(361, 163);
             this.lstedad.Name = "lstedad";
             this.lstedad.Size = new System.Drawing.Size(100, 21);
