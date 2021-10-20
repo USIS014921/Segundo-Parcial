@@ -301,6 +301,16 @@ namespace Segundo_Parcial
             inicio.Show();
             this.Hide();
         }
+
+        private void lstedad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

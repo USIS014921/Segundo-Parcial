@@ -38,27 +38,27 @@ namespace Segundo_Parcial
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bbuscar = new System.Windows.Forms.Button();
             this.bsalir = new System.Windows.Forms.Button();
-            this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.txtusuario = new System.Windows.Forms.TextBox();
-            this.txtclave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bnuevo = new System.Windows.Forms.Button();
-            this.lstnivel = new System.Windows.Forms.ComboBox();
             this.bactualizar = new System.Windows.Forms.Button();
             this.bprimero = new System.Windows.Forms.Button();
             this.banterior = new System.Windows.Forms.Button();
             this.bsiguiente = new System.Windows.Forms.Button();
             this.bultimo = new System.Windows.Forms.Button();
-            this.txttelefono = new System.Windows.Forms.TextBox();
-            this.txtcorreo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.lstedad = new System.Windows.Forms.ComboBox();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtclave = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
             this.lstsexo = new System.Windows.Forms.ComboBox();
+            this.lstnivel = new System.Windows.Forms.ComboBox();
+            this.lstedad = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -148,27 +148,6 @@ namespace Segundo_Parcial
             this.bsalir.UseVisualStyleBackColor = true;
             this.bsalir.Click += new System.EventHandler(this.bsalir_Click);
             // 
-            // txtbuscar
-            // 
-            this.txtbuscar.Location = new System.Drawing.Point(491, 197);
-            this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(100, 20);
-            this.txtbuscar.TabIndex = 8;
-            // 
-            // txtusuario
-            // 
-            this.txtusuario.Location = new System.Drawing.Point(352, 6);
-            this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(100, 20);
-            this.txtusuario.TabIndex = 9;
-            // 
-            // txtclave
-            // 
-            this.txtclave.Location = new System.Drawing.Point(352, 29);
-            this.txtclave.Name = "txtclave";
-            this.txtclave.Size = new System.Drawing.Size(100, 20);
-            this.txtclave.TabIndex = 10;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -209,25 +188,6 @@ namespace Segundo_Parcial
             this.bnuevo.Text = "Nuevo";
             this.bnuevo.UseVisualStyleBackColor = true;
             this.bnuevo.Click += new System.EventHandler(this.bnuevo_Click);
-            // 
-            // lstnivel
-            // 
-            this.lstnivel.FormattingEnabled = true;
-            this.lstnivel.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.lstnivel.Location = new System.Drawing.Point(352, 55);
-            this.lstnivel.Name = "lstnivel";
-            this.lstnivel.Size = new System.Drawing.Size(100, 21);
-            this.lstnivel.TabIndex = 16;
             // 
             // bactualizar
             // 
@@ -281,20 +241,6 @@ namespace Segundo_Parcial
             this.bultimo.Text = "Ultimo";
             this.bultimo.UseVisualStyleBackColor = true;
             // 
-            // txttelefono
-            // 
-            this.txttelefono.Location = new System.Drawing.Point(352, 82);
-            this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(100, 20);
-            this.txttelefono.TabIndex = 22;
-            // 
-            // txtcorreo
-            // 
-            this.txtcorreo.Location = new System.Drawing.Point(352, 108);
-            this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(100, 20);
-            this.txtcorreo.TabIndex = 23;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -335,68 +281,64 @@ namespace Segundo_Parcial
             this.label7.TabIndex = 28;
             this.label7.Text = "Edad:";
             // 
-            // lstedad
+            // txtbuscar
             // 
-            this.lstedad.FormattingEnabled = true;
-            this.lstedad.Items.AddRange(new object[] {
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60"});
-            this.lstedad.Location = new System.Drawing.Point(352, 158);
-            this.lstedad.Name = "lstedad";
-            this.lstedad.Size = new System.Drawing.Size(100, 21);
-            this.lstedad.TabIndex = 29;
+            this.txtbuscar.Location = new System.Drawing.Point(491, 197);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtbuscar.TabIndex = 8;
+            // 
+            // txtusuario
+            // 
+            this.txtusuario.Location = new System.Drawing.Point(361, 5);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(100, 20);
+            this.txtusuario.TabIndex = 29;
+            // 
+            // txtclave
+            // 
+            this.txtclave.Location = new System.Drawing.Point(361, 31);
+            this.txtclave.Name = "txtclave";
+            this.txtclave.Size = new System.Drawing.Size(100, 20);
+            this.txtclave.TabIndex = 30;
+            // 
+            // txttelefono
+            // 
+            this.txttelefono.Location = new System.Drawing.Point(361, 84);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(100, 20);
+            this.txttelefono.TabIndex = 31;
+            // 
+            // txtcorreo
+            // 
+            this.txtcorreo.Location = new System.Drawing.Point(361, 110);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(100, 20);
+            this.txtcorreo.TabIndex = 32;
             // 
             // lstsexo
             // 
             this.lstsexo.FormattingEnabled = true;
-            this.lstsexo.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.lstsexo.Location = new System.Drawing.Point(352, 134);
+            this.lstsexo.Location = new System.Drawing.Point(361, 136);
             this.lstsexo.Name = "lstsexo";
             this.lstsexo.Size = new System.Drawing.Size(100, 21);
-            this.lstsexo.TabIndex = 30;
+            this.lstsexo.TabIndex = 33;
+            // 
+            // lstnivel
+            // 
+            this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Location = new System.Drawing.Point(361, 57);
+            this.lstnivel.Name = "lstnivel";
+            this.lstnivel.Size = new System.Drawing.Size(100, 21);
+            this.lstnivel.TabIndex = 34;
+            // 
+            // lstedad
+            // 
+            this.lstedad.FormattingEnabled = true;
+            this.lstedad.Location = new System.Drawing.Point(361, 163);
+            this.lstedad.Name = "lstedad";
+            this.lstedad.Size = new System.Drawing.Size(100, 21);
+            this.lstedad.TabIndex = 35;
             // 
             // Form1
             // 
@@ -404,26 +346,26 @@ namespace Segundo_Parcial
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(841, 500);
-            this.Controls.Add(this.lstsexo);
             this.Controls.Add(this.lstedad);
+            this.Controls.Add(this.lstnivel);
+            this.Controls.Add(this.lstsexo);
+            this.Controls.Add(this.txtcorreo);
+            this.Controls.Add(this.txttelefono);
+            this.Controls.Add(this.txtclave);
+            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtcorreo);
-            this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.bultimo);
             this.Controls.Add(this.bsiguiente);
             this.Controls.Add(this.banterior);
             this.Controls.Add(this.bprimero);
             this.Controls.Add(this.bactualizar);
-            this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.bnuevo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtclave);
-            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.bsalir);
             this.Controls.Add(this.bbuscar);
@@ -453,27 +395,27 @@ namespace Segundo_Parcial
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bbuscar;
         private System.Windows.Forms.Button bsalir;
-        private System.Windows.Forms.TextBox txtbuscar;
-        private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bnuevo;
-        private System.Windows.Forms.ComboBox lstnivel;
         private System.Windows.Forms.Button bactualizar;
         private System.Windows.Forms.Button bprimero;
         private System.Windows.Forms.Button banterior;
         private System.Windows.Forms.Button bsiguiente;
         private System.Windows.Forms.Button bultimo;
-        private System.Windows.Forms.TextBox txttelefono;
-        private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox lstedad;
+        private System.Windows.Forms.TextBox txtbuscar;
+        private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.TextBox txtclave;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.ComboBox lstsexo;
+        private System.Windows.Forms.ComboBox lstnivel;
+        private System.Windows.Forms.ComboBox lstedad;
     }
 }
 
