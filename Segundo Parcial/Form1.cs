@@ -87,10 +87,10 @@ namespace Segundo_Parcial
                 myCommand.Parameters.Add("?usuario", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
                 myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 20).Value = txtclave.Text;
                 myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = txttelefono.Text;
+                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
+                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstsexo.Text;
+                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstedad.Text;
 
 
                 myCommand.Connection = myConnection;
@@ -150,10 +150,10 @@ namespace Segundo_Parcial
                 string usu = txtusuario.Text.ToString();
                 string cla = txtclave.Text.ToString();
                 string niv = lstnivel.Text;
-                string tel = lstnivel.Text;
-                string cor = lstnivel.Text;
-                string sex = lstnivel.Text;
-                string eda = lstnivel.Text;
+                string tel = txttelefono.Text.ToString();
+                string cor = txtcorreo.Text.ToString();
+                string sex = lstsexo.Text;
+                string eda = lstedad.Text;
 
 
                 string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE idusuario = '" + usuario_modificar +"'";
@@ -178,6 +178,7 @@ namespace Segundo_Parcial
             {
                 MessageBox.Show("Error al Actualizar el usuario", "Alerta!",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
             bmodificar.Visible = true;
             bactualizar.Visible = false;
 
@@ -190,7 +191,6 @@ namespace Segundo_Parcial
             lstedad.Enabled = false;
             bmodificar.Focus();
         }
-
 
         private void bbuscar_Click(object sender, EventArgs e)
         {
@@ -302,5 +302,5 @@ namespace Segundo_Parcial
             this.Hide();
         }
     }
-    }
+}
 
