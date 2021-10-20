@@ -84,6 +84,7 @@ namespace Segundo_Parcial
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
                 string myInsertQuery = "INSERT INTO usuarios(nombre,clave,nivel,telefono,correo,sexo,edad) Values(?nombre,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+                
                 myCommand.Parameters.Add("?usuario", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
                 myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 20).Value = txtclave.Text;
                 myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
@@ -91,7 +92,6 @@ namespace Segundo_Parcial
                 myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
                 myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstsexo.Text;
                 myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstedad.Text;
-
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
