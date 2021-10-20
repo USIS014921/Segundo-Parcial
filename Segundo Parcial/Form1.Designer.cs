@@ -56,9 +56,9 @@ namespace Segundo_Parcial
             this.txtclave = new System.Windows.Forms.TextBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.txtcorreo = new System.Windows.Forms.TextBox();
-            this.lstsexo = new System.Windows.Forms.ComboBox();
-            this.lstnivel = new System.Windows.Forms.ComboBox();
             this.lstedad = new System.Windows.Forms.ComboBox();
+            this.lstnivel = new System.Windows.Forms.ComboBox();
+            this.lstsexo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +76,7 @@ namespace Segundo_Parcial
             // bguardar
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(61, 226);
+            this.bguardar.Location = new System.Drawing.Point(82, 269);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(80, 30);
             this.bguardar.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace Segundo_Parcial
             // beliminar
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(147, 226);
+            this.beliminar.Location = new System.Drawing.Point(168, 269);
             this.beliminar.Name = "beliminar";
             this.beliminar.Size = new System.Drawing.Size(80, 30);
             this.beliminar.TabIndex = 2;
@@ -98,7 +98,7 @@ namespace Segundo_Parcial
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(234, 226);
+            this.bmodificar.Location = new System.Drawing.Point(255, 269);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(80, 30);
             this.bmodificar.TabIndex = 3;
@@ -109,7 +109,7 @@ namespace Segundo_Parcial
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(319, 226);
+            this.bentrar.Location = new System.Drawing.Point(340, 269);
             this.bentrar.Name = "bentrar";
             this.bentrar.Size = new System.Drawing.Size(80, 30);
             this.bentrar.TabIndex = 4;
@@ -120,7 +120,7 @@ namespace Segundo_Parcial
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 262);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 310);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(821, 228);
             this.dataGridView1.TabIndex = 5;
@@ -129,7 +129,7 @@ namespace Segundo_Parcial
             // bbuscar
             // 
             this.bbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbuscar.Location = new System.Drawing.Point(405, 190);
+            this.bbuscar.Location = new System.Drawing.Point(426, 233);
             this.bbuscar.Name = "bbuscar";
             this.bbuscar.Size = new System.Drawing.Size(80, 30);
             this.bbuscar.TabIndex = 6;
@@ -140,7 +140,7 @@ namespace Segundo_Parcial
             // bsalir
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(405, 226);
+            this.bsalir.Location = new System.Drawing.Point(426, 269);
             this.bsalir.Name = "bsalir";
             this.bsalir.Size = new System.Drawing.Size(80, 30);
             this.bsalir.TabIndex = 7;
@@ -152,7 +152,7 @@ namespace Segundo_Parcial
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 10);
+            this.label1.Location = new System.Drawing.Point(248, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 12;
@@ -162,7 +162,7 @@ namespace Segundo_Parcial
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 33);
+            this.label2.Location = new System.Drawing.Point(262, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 13;
@@ -172,7 +172,7 @@ namespace Segundo_Parcial
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(298, 60);
+            this.label3.Location = new System.Drawing.Point(266, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 14;
@@ -181,7 +181,7 @@ namespace Segundo_Parcial
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(61, 226);
+            this.bnuevo.Location = new System.Drawing.Point(82, 269);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(80, 30);
             this.bnuevo.TabIndex = 15;
@@ -192,7 +192,7 @@ namespace Segundo_Parcial
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(234, 226);
+            this.bactualizar.Location = new System.Drawing.Point(255, 269);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(80, 30);
             this.bactualizar.TabIndex = 17;
@@ -203,7 +203,7 @@ namespace Segundo_Parcial
             // bprimero
             // 
             this.bprimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bprimero.Location = new System.Drawing.Point(61, 190);
+            this.bprimero.Location = new System.Drawing.Point(82, 233);
             this.bprimero.Name = "bprimero";
             this.bprimero.Size = new System.Drawing.Size(80, 30);
             this.bprimero.TabIndex = 18;
@@ -213,7 +213,7 @@ namespace Segundo_Parcial
             // banterior
             // 
             this.banterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.banterior.Location = new System.Drawing.Point(147, 190);
+            this.banterior.Location = new System.Drawing.Point(168, 233);
             this.banterior.Name = "banterior";
             this.banterior.Size = new System.Drawing.Size(80, 30);
             this.banterior.TabIndex = 19;
@@ -223,7 +223,7 @@ namespace Segundo_Parcial
             // bsiguiente
             // 
             this.bsiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsiguiente.Location = new System.Drawing.Point(234, 190);
+            this.bsiguiente.Location = new System.Drawing.Point(255, 233);
             this.bsiguiente.Name = "bsiguiente";
             this.bsiguiente.Size = new System.Drawing.Size(80, 30);
             this.bsiguiente.TabIndex = 20;
@@ -234,7 +234,7 @@ namespace Segundo_Parcial
             // bultimo
             // 
             this.bultimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bultimo.Location = new System.Drawing.Point(319, 190);
+            this.bultimo.Location = new System.Drawing.Point(340, 233);
             this.bultimo.Name = "bultimo";
             this.bultimo.Size = new System.Drawing.Size(80, 30);
             this.bultimo.TabIndex = 21;
@@ -245,7 +245,7 @@ namespace Segundo_Parcial
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(272, 86);
+            this.label4.Location = new System.Drawing.Point(240, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 25;
@@ -255,7 +255,7 @@ namespace Segundo_Parcial
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(287, 112);
+            this.label5.Location = new System.Drawing.Point(255, 118);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 26;
@@ -265,7 +265,7 @@ namespace Segundo_Parcial
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(299, 139);
+            this.label6.Location = new System.Drawing.Point(267, 147);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 27;
@@ -275,7 +275,7 @@ namespace Segundo_Parcial
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(297, 163);
+            this.label7.Location = new System.Drawing.Point(265, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 16);
             this.label7.TabIndex = 28;
@@ -283,49 +283,49 @@ namespace Segundo_Parcial
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(491, 197);
+            this.txtbuscar.Location = new System.Drawing.Point(512, 240);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 20);
             this.txtbuscar.TabIndex = 8;
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(361, 5);
+            this.txtusuario.Location = new System.Drawing.Point(329, 12);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 29;
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(361, 31);
+            this.txtclave.Location = new System.Drawing.Point(329, 38);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(100, 20);
             this.txtclave.TabIndex = 30;
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(361, 84);
+            this.txttelefono.Location = new System.Drawing.Point(329, 91);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(100, 20);
             this.txttelefono.TabIndex = 31;
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(361, 110);
+            this.txtcorreo.Location = new System.Drawing.Point(329, 117);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(100, 20);
             this.txtcorreo.TabIndex = 32;
             // 
-            // lstsexo
+            // lstedad
             // 
-            this.lstsexo.FormattingEnabled = true;
-            this.lstsexo.Items.AddRange(new object[] {
+            this.lstedad.FormattingEnabled = true;
+            this.lstedad.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.lstsexo.Location = new System.Drawing.Point(361, 136);
-            this.lstsexo.Name = "lstsexo";
-            this.lstsexo.Size = new System.Drawing.Size(100, 21);
-            this.lstsexo.TabIndex = 33;
+            this.lstedad.Location = new System.Drawing.Point(329, 143);
+            this.lstedad.Name = "lstedad";
+            this.lstedad.Size = new System.Drawing.Size(100, 21);
+            this.lstedad.TabIndex = 33;
             // 
             // lstnivel
             // 
@@ -341,15 +341,15 @@ namespace Segundo_Parcial
             "8",
             "9",
             "10"});
-            this.lstnivel.Location = new System.Drawing.Point(361, 57);
+            this.lstnivel.Location = new System.Drawing.Point(329, 64);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 34;
             // 
-            // lstedad
+            // lstsexo
             // 
-            this.lstedad.FormattingEnabled = true;
-            this.lstedad.Items.AddRange(new object[] {
+            this.lstsexo.FormattingEnabled = true;
+            this.lstsexo.Items.AddRange(new object[] {
             "18\t",
             "19\t",
             "20",
@@ -383,20 +383,20 @@ namespace Segundo_Parcial
             "48\t",
             "49\t",
             "50"});
-            this.lstedad.Location = new System.Drawing.Point(361, 163);
-            this.lstedad.Name = "lstedad";
-            this.lstedad.Size = new System.Drawing.Size(100, 21);
-            this.lstedad.TabIndex = 35;
+            this.lstsexo.Location = new System.Drawing.Point(329, 170);
+            this.lstsexo.Name = "lstsexo";
+            this.lstsexo.Size = new System.Drawing.Size(100, 21);
+            this.lstsexo.TabIndex = 35;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(841, 500);
-            this.Controls.Add(this.lstedad);
-            this.Controls.Add(this.lstnivel);
+            this.ClientSize = new System.Drawing.Size(841, 550);
             this.Controls.Add(this.lstsexo);
+            this.Controls.Add(this.lstnivel);
+            this.Controls.Add(this.lstedad);
             this.Controls.Add(this.txtcorreo);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.txtclave);
@@ -461,9 +461,9 @@ namespace Segundo_Parcial
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.TextBox txtcorreo;
-        private System.Windows.Forms.ComboBox lstsexo;
-        private System.Windows.Forms.ComboBox lstnivel;
         private System.Windows.Forms.ComboBox lstedad;
+        private System.Windows.Forms.ComboBox lstnivel;
+        private System.Windows.Forms.ComboBox lstsexo;
     }
 }
 

@@ -30,8 +30,8 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstsexo.Enabled = false;
             lstedad.Enabled = false;
+            lstsexo.Enabled = false;
             bactualizar.Visible = false;
 
             
@@ -63,15 +63,15 @@ namespace Segundo_Parcial
             lstnivel.Enabled = true;
             txttelefono.Enabled = true;
             txtcorreo.Enabled = true;
-            lstsexo.Enabled = true;
             lstedad.Enabled = true;
+            lstsexo.Enabled = true;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstsexo.Text = "Selecione su genero";
-            lstedad.Text = "Indique su edad";
+            lstedad.Text = "Selecione su genero";
+            lstsexo.Text = "Indique su edad";
             txtusuario.Focus();
             bnuevo.Visible = false;
             bguardar.Visible = true;
@@ -82,7 +82,7 @@ namespace Segundo_Parcial
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios(nombre,clave,nivel,telefono,correo,sexo,edad) Values(?nombre,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
+                string myInsertQuery = "INSERT INTO usuarios(usuario,clave,nivel,telefono,correo,sexo,edad) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 
                 myCommand.Parameters.Add("?usuario", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
@@ -90,8 +90,8 @@ namespace Segundo_Parcial
                 myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
                 myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = txttelefono.Text;
                 myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
-                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstsexo.Text;
-                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstedad.Text;
+                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstedad.Text;
+                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstsexo.Text;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -121,8 +121,8 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstsexo.Enabled = false;
             lstedad.Enabled = false;
+            lstsexo.Enabled = false;
             bnuevo.Focus();
         }
 
@@ -133,8 +133,8 @@ namespace Segundo_Parcial
             lstnivel.Enabled = true;
             txttelefono.Enabled = true;
             txtcorreo.Enabled = true;
-            lstsexo.Enabled = true;
             lstedad.Enabled = true;
+            lstsexo.Enabled = true;
             txtusuario.Focus();
 
             bmodificar.Visible = false;
@@ -152,11 +152,10 @@ namespace Segundo_Parcial
                 string niv = lstnivel.Text;
                 string tel = txttelefono.Text.ToString();
                 string cor = txtcorreo.Text.ToString();
-                string sex = lstsexo.Text;
-                string eda = lstedad.Text;
+                string sex = lstedad.Text;
+                string eda = lstsexo.Text;
 
-
-                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
+                string myInsertQuery = "UPDATE usuarios SET idusuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE idusuario = '" + usuario_modificar +"'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;
@@ -187,8 +186,8 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstsexo.Enabled = false;
             lstedad.Enabled = false;
+            lstsexo.Enabled = false;
             bmodificar.Focus();
         }
 
@@ -210,8 +209,8 @@ namespace Segundo_Parcial
                     lstnivel.Text = (myReader.GetString(2));
                     txttelefono.Text = (myReader.GetString(3));
                     txtcorreo.Text = (myReader.GetString(4));
-                    lstsexo.Text = (myReader.GetString(5));
-                    lstedad.Text = (myReader.GetString(6));
+                    lstedad.Text = (myReader.GetString(5));
+                    lstsexo.Text = (myReader.GetString(6));
 
                 }
                 else
@@ -235,8 +234,8 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstsexo.Enabled = false;
             lstedad.Enabled = false;
+            lstsexo.Enabled = false;
 
             bmodificar.Focus(); 
         }
@@ -270,7 +269,7 @@ namespace Segundo_Parcial
 
             bnuevo.Visible = true;
             bguardar.Visible = false;
-           
+
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
