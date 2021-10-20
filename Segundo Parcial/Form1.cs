@@ -69,8 +69,8 @@ namespace Segundo_Parcial
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstsexo.Text = "";
-            lstedad.Text = "";
+            lstsexo.Text = "Selecione su genero";
+            lstedad.Text = "Indique su edad";
             txtusuario.Focus();
             bnuevo.Visible = false;
             bguardar.Visible = true;
@@ -155,7 +155,7 @@ namespace Segundo_Parcial
                 string eda = lstnivel.Text;
 
 
-                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
+                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE idusuario = '" + usuario_modificar +"'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;
@@ -296,8 +296,8 @@ namespace Segundo_Parcial
 
         private void bentrar_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+            Inicio inicio = new Inicio();
+            inicio.Show();
             this.Hide();
         }
     }
