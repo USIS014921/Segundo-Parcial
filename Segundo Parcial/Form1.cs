@@ -14,7 +14,7 @@ namespace Segundo_Parcial
 {
     public partial class Form1 : Form
     {
-        public string cadena_conexion = "Database = sistemapro1; DataSource = localhost; User Id = Joan; Password = 12902";
+        public string cadena_conexion = "Database = parcial2; DataSource = localhost; User Id = Joan; Password = 12902";
         public string usuario_modificar;
         public string usuario_eliminar;
 
@@ -28,6 +28,12 @@ namespace Segundo_Parcial
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
+            txttelefono.Enabled = false;
+            txtcorreo.Enabled = false;
+            lstsexo.Enabled = false;
+            lstedad.Enabled = false;
+
+            
             try
             {
                 String consulta = "Select * from usuarios ";
@@ -35,9 +41,9 @@ namespace Segundo_Parcial
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
 
                 System.Data.DataSet ds = new System.Data.DataSet();
-                comando.Fill(ds,"sistemapro1");
+                comando.Fill(ds,"parcial2");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "sistemapro1";
+                dataGridView1.DataMember = "parcial2";
 
             }
 
@@ -54,9 +60,17 @@ namespace Segundo_Parcial
             txtusuario.Enabled = true;
             txtclave.Enabled = true;
             lstnivel.Enabled = true;
+            txttelefono.Enabled = true;
+            txtcorreo.Enabled = true;
+            lstsexo.Enabled = true;
+            lstedad.Enabled = true;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
+            txttelefono.Text = "";
+            txtcorreo.Text = "";
+            lstsexo.Text = "";
+            lstedad.Text = "";
             txtusuario.Focus();
             bnuevo.Visible = false;
             bguardar.Visible = true;
@@ -67,11 +81,15 @@ namespace Segundo_Parcial
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios (nombre,clave,nivel) Values(?nombre,?clave,?nivel)";
+                string myInsertQuery = "INSERT INTO usuarios (nombre,clave,nivel,telefono,correo,sexo,edad) Values(?nombre,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
-                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 75).Value = txtclave.Text;
-                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 11).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?usuario", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
+                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 20).Value = txtclave.Text;
+                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstnivel.Text;
+                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstnivel.Text;
 
 
                 myCommand.Connection = myConnection;
@@ -85,9 +103,9 @@ namespace Segundo_Parcial
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "sistemapro1");
+                da.Fill(ds, "parcial2");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "sistemapro1";
+                dataGridView1.DataMember = "parcial2";
             }
             catch (MySqlException)
             {
@@ -96,9 +114,14 @@ namespace Segundo_Parcial
 
             bnuevo.Visible = true;
             bguardar.Visible = false;
+
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
+            txttelefono.Enabled = false;
+            txtcorreo.Enabled = false;
+            lstsexo.Enabled = false;
+            lstedad.Enabled = false;
             bnuevo.Focus();
         }
 
@@ -107,6 +130,10 @@ namespace Segundo_Parcial
             txtusuario.Enabled = true;
             txtclave.Enabled = true;
             lstnivel.Enabled = true;
+            txttelefono.Enabled = true;
+            txtcorreo.Enabled = true;
+            lstsexo.Enabled = true;
+            lstedad.Enabled = true;
             txtusuario.Focus();
 
             bmodificar.Visible = false;
@@ -119,11 +146,16 @@ namespace Segundo_Parcial
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string nom = txtusuario.Text.ToString();
+                string usu = txtusuario.Text.ToString();
                 string cla = txtclave.Text.ToString();
                 string niv = lstnivel.Text;
+                string tel = lstnivel.Text;
+                string cor = lstnivel.Text;
+                string sex = lstnivel.Text;
+                string eda = lstnivel.Text;
 
-                string myInsertQuery = "UPDATE usuarios SET nombre = '" + nom + "',clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar +"'";
+
+                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
                 myCommand.Connection = myConnection;
@@ -137,9 +169,9 @@ namespace Segundo_Parcial
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "sistemapro1");
+                da.Fill(ds, "parcial2");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "sistemapro1";
+                dataGridView1.DataMember = "parcial2";
             }
             catch (MySqlException)
             {
@@ -151,6 +183,10 @@ namespace Segundo_Parcial
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
+            txttelefono.Enabled = false;
+            txtcorreo.Enabled = false;
+            lstsexo.Enabled = false;
+            lstedad.Enabled = false;
             bmodificar.Focus();
         }
 
@@ -168,9 +204,13 @@ namespace Segundo_Parcial
                 if (myReader.Read())
                 {
 
-                    txtusuario.Text = (myReader.GetString(1));
-                    txtclave.Text = (myReader.GetString(2));
-                    lstnivel.Text = (myReader.GetString(3));
+                    txtusuario.Text = (myReader.GetString(0));
+                    txtclave.Text = (myReader.GetString(1));
+                    lstnivel.Text = (myReader.GetString(2));
+                    txttelefono.Text = (myReader.GetString(3));
+                    txtcorreo.Text = (myReader.GetString(4));
+                    lstsexo.Text = (myReader.GetString(5));
+                    lstedad.Text = (myReader.GetString(6));
 
                 }
                 else
@@ -192,6 +232,11 @@ namespace Segundo_Parcial
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
+            txttelefono.Enabled = false;
+            txtcorreo.Enabled = false;
+            lstsexo.Enabled = false;
+            lstedad.Enabled = false;
+
             bmodificar.Focus(); 
         }
 
@@ -213,9 +258,9 @@ namespace Segundo_Parcial
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "sistemapro1");
+                da.Fill(ds, "parcial2");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "sistemapro1";
+                dataGridView1.DataMember = "parcial2";
             }
             catch
             {
