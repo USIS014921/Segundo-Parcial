@@ -34,7 +34,6 @@ namespace Segundo_Parcial
             lstsexo.Enabled = false;
             bactualizar.Visible = false;
 
-            
             try
             {
                 String consulta = "Select * from usuarios ";
@@ -158,6 +157,7 @@ namespace Segundo_Parcial
                 string myInsertQuery = "UPDATE usuarios SET idusuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "' ,telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE idusuario = '" + usuario_modificar +"'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+               
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
