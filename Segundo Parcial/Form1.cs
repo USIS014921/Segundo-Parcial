@@ -72,6 +72,7 @@ namespace Segundo_Parcial
             lstedad.Text = "Selecione su genero";
             lstsexo.Text = "Indique su edad";
             txtusuario.Focus();
+
             bnuevo.Visible = false;
             bguardar.Visible = true;
         }
@@ -273,9 +274,17 @@ namespace Segundo_Parcial
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
+            txttelefono.Enabled = false;
+            txtcorreo.Enabled = false;
+            lstedad.Enabled = false;
+            lstsexo.Enabled = false;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
+            txttelefono.Text = "";
+            txtcorreo.Text = "";
+            lstedad.Text = "Selecione su genero";
+            lstsexo.Text = "Indique su edad";
             txtbuscar.Focus();
         }
 
