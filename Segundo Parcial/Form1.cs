@@ -152,8 +152,8 @@ namespace Segundo_Parcial
                 string niv = lstnivel.Text;
                 string tel = txttelefono.Text.ToString();
                 string cor = txtcorreo.Text.ToString();
-                string sex = lstedad.Text;
-                string eda = lstsexo.Text;
+                string sex = lstsexo.Text;
+                string eda = lstedad.Text;
 
                 string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
 
