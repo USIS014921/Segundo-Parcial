@@ -76,7 +76,7 @@ namespace Segundo_Parcial
             // bguardar
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(82, 269);
+            this.bguardar.Location = new System.Drawing.Point(86, 236);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(80, 30);
             this.bguardar.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace Segundo_Parcial
             // beliminar
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(168, 269);
+            this.beliminar.Location = new System.Drawing.Point(172, 236);
             this.beliminar.Name = "beliminar";
             this.beliminar.Size = new System.Drawing.Size(80, 30);
             this.beliminar.TabIndex = 2;
@@ -98,7 +98,7 @@ namespace Segundo_Parcial
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(255, 269);
+            this.bmodificar.Location = new System.Drawing.Point(259, 236);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(80, 30);
             this.bmodificar.TabIndex = 3;
@@ -109,7 +109,7 @@ namespace Segundo_Parcial
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(340, 269);
+            this.bentrar.Location = new System.Drawing.Point(344, 236);
             this.bentrar.Name = "bentrar";
             this.bentrar.Size = new System.Drawing.Size(80, 30);
             this.bentrar.TabIndex = 4;
@@ -120,7 +120,7 @@ namespace Segundo_Parcial
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 310);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 277);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(821, 228);
             this.dataGridView1.TabIndex = 5;
@@ -129,7 +129,7 @@ namespace Segundo_Parcial
             // bbuscar
             // 
             this.bbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbuscar.Location = new System.Drawing.Point(426, 233);
+            this.bbuscar.Location = new System.Drawing.Point(430, 200);
             this.bbuscar.Name = "bbuscar";
             this.bbuscar.Size = new System.Drawing.Size(80, 30);
             this.bbuscar.TabIndex = 6;
@@ -140,7 +140,7 @@ namespace Segundo_Parcial
             // bsalir
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(426, 269);
+            this.bsalir.Location = new System.Drawing.Point(430, 236);
             this.bsalir.Name = "bsalir";
             this.bsalir.Size = new System.Drawing.Size(80, 30);
             this.bsalir.TabIndex = 7;
@@ -181,7 +181,7 @@ namespace Segundo_Parcial
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(82, 269);
+            this.bnuevo.Location = new System.Drawing.Point(86, 236);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(80, 30);
             this.bnuevo.TabIndex = 15;
@@ -192,7 +192,7 @@ namespace Segundo_Parcial
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(255, 269);
+            this.bactualizar.Location = new System.Drawing.Point(259, 236);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(80, 30);
             this.bactualizar.TabIndex = 17;
@@ -203,7 +203,7 @@ namespace Segundo_Parcial
             // bprimero
             // 
             this.bprimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bprimero.Location = new System.Drawing.Point(82, 233);
+            this.bprimero.Location = new System.Drawing.Point(86, 200);
             this.bprimero.Name = "bprimero";
             this.bprimero.Size = new System.Drawing.Size(80, 30);
             this.bprimero.TabIndex = 18;
@@ -213,7 +213,7 @@ namespace Segundo_Parcial
             // banterior
             // 
             this.banterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.banterior.Location = new System.Drawing.Point(168, 233);
+            this.banterior.Location = new System.Drawing.Point(172, 200);
             this.banterior.Name = "banterior";
             this.banterior.Size = new System.Drawing.Size(80, 30);
             this.banterior.TabIndex = 19;
@@ -223,7 +223,7 @@ namespace Segundo_Parcial
             // bsiguiente
             // 
             this.bsiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsiguiente.Location = new System.Drawing.Point(255, 233);
+            this.bsiguiente.Location = new System.Drawing.Point(259, 200);
             this.bsiguiente.Name = "bsiguiente";
             this.bsiguiente.Size = new System.Drawing.Size(80, 30);
             this.bsiguiente.TabIndex = 20;
@@ -234,7 +234,7 @@ namespace Segundo_Parcial
             // bultimo
             // 
             this.bultimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bultimo.Location = new System.Drawing.Point(340, 233);
+            this.bultimo.Location = new System.Drawing.Point(344, 200);
             this.bultimo.Name = "bultimo";
             this.bultimo.Size = new System.Drawing.Size(80, 30);
             this.bultimo.TabIndex = 21;
@@ -283,7 +283,7 @@ namespace Segundo_Parcial
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(512, 240);
+            this.txtbuscar.Location = new System.Drawing.Point(516, 207);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 20);
             this.txtbuscar.TabIndex = 8;
@@ -394,7 +394,7 @@ namespace Segundo_Parcial
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(841, 550);
+            this.ClientSize = new System.Drawing.Size(845, 513);
             this.Controls.Add(this.lstsexo);
             this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.lstedad);
