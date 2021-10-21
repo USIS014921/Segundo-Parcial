@@ -294,6 +294,7 @@ namespace Segundo_Parcial
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 29;
+            this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged_1);
             // 
             // txtclave
             // 

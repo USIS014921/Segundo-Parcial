@@ -204,13 +204,13 @@ namespace Segundo_Parcial
                 if (myReader.Read())
                 {
 
-                    txtusuario.Text = (myReader.GetString(0));
-                    txtclave.Text = (myReader.GetString(1));
-                    lstnivel.Text = (myReader.GetString(2));
-                    txttelefono.Text = (myReader.GetString(3));
-                    txtcorreo.Text = (myReader.GetString(4));
-                    lstedad.Text = (myReader.GetString(5));
-                    lstsexo.Text = (myReader.GetString(6));
+                    txtusuario.Text = (myReader.GetString(1));
+                    txtclave.Text = (myReader.GetString(2));
+                    lstnivel.Text = (myReader.GetString(3));
+                    txttelefono.Text = (myReader.GetString(4));
+                    txtcorreo.Text = (myReader.GetString(5));
+                    lstedad.Text = (myReader.GetString(6));
+                    lstsexo.Text = (myReader.GetString(7));
 
                 }
                 else
@@ -307,6 +307,11 @@ namespace Segundo_Parcial
         }
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario_TextChanged_1(object sender, EventArgs e)
         {
 
         }
