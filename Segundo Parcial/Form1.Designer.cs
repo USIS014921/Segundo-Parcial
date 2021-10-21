@@ -43,10 +43,6 @@ namespace Segundo_Parcial
             this.label3 = new System.Windows.Forms.Label();
             this.bnuevo = new System.Windows.Forms.Button();
             this.bactualizar = new System.Windows.Forms.Button();
-            this.bprimero = new System.Windows.Forms.Button();
-            this.banterior = new System.Windows.Forms.Button();
-            this.bsiguiente = new System.Windows.Forms.Button();
-            this.bultimo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -76,9 +72,9 @@ namespace Segundo_Parcial
             // bguardar
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(86, 236);
+            this.bguardar.Location = new System.Drawing.Point(11, 226);
             this.bguardar.Name = "bguardar";
-            this.bguardar.Size = new System.Drawing.Size(80, 30);
+            this.bguardar.Size = new System.Drawing.Size(80, 35);
             this.bguardar.TabIndex = 1;
             this.bguardar.Text = "Guardar";
             this.bguardar.UseVisualStyleBackColor = true;
@@ -87,9 +83,9 @@ namespace Segundo_Parcial
             // beliminar
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(172, 236);
+            this.beliminar.Location = new System.Drawing.Point(97, 226);
             this.beliminar.Name = "beliminar";
-            this.beliminar.Size = new System.Drawing.Size(80, 30);
+            this.beliminar.Size = new System.Drawing.Size(80, 35);
             this.beliminar.TabIndex = 2;
             this.beliminar.Text = "Eliminar";
             this.beliminar.UseVisualStyleBackColor = true;
@@ -98,9 +94,9 @@ namespace Segundo_Parcial
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(259, 236);
+            this.bmodificar.Location = new System.Drawing.Point(184, 226);
             this.bmodificar.Name = "bmodificar";
-            this.bmodificar.Size = new System.Drawing.Size(80, 30);
+            this.bmodificar.Size = new System.Drawing.Size(80, 35);
             this.bmodificar.TabIndex = 3;
             this.bmodificar.Text = "Modificar";
             this.bmodificar.UseVisualStyleBackColor = true;
@@ -109,9 +105,9 @@ namespace Segundo_Parcial
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(344, 236);
+            this.bentrar.Location = new System.Drawing.Point(269, 226);
             this.bentrar.Name = "bentrar";
-            this.bentrar.Size = new System.Drawing.Size(80, 30);
+            this.bentrar.Size = new System.Drawing.Size(80, 35);
             this.bentrar.TabIndex = 4;
             this.bentrar.Text = "Entrar";
             this.bentrar.UseVisualStyleBackColor = true;
@@ -129,9 +125,9 @@ namespace Segundo_Parcial
             // bbuscar
             // 
             this.bbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbuscar.Location = new System.Drawing.Point(430, 200);
+            this.bbuscar.Location = new System.Drawing.Point(441, 226);
             this.bbuscar.Name = "bbuscar";
-            this.bbuscar.Size = new System.Drawing.Size(80, 30);
+            this.bbuscar.Size = new System.Drawing.Size(80, 35);
             this.bbuscar.TabIndex = 6;
             this.bbuscar.Text = "Buscar";
             this.bbuscar.UseVisualStyleBackColor = true;
@@ -140,9 +136,9 @@ namespace Segundo_Parcial
             // bsalir
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(430, 236);
+            this.bsalir.Location = new System.Drawing.Point(355, 226);
             this.bsalir.Name = "bsalir";
-            this.bsalir.Size = new System.Drawing.Size(80, 30);
+            this.bsalir.Size = new System.Drawing.Size(80, 35);
             this.bsalir.TabIndex = 7;
             this.bsalir.Text = "Salir";
             this.bsalir.UseVisualStyleBackColor = true;
@@ -181,9 +177,9 @@ namespace Segundo_Parcial
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(86, 236);
+            this.bnuevo.Location = new System.Drawing.Point(11, 226);
             this.bnuevo.Name = "bnuevo";
-            this.bnuevo.Size = new System.Drawing.Size(80, 30);
+            this.bnuevo.Size = new System.Drawing.Size(80, 35);
             this.bnuevo.TabIndex = 15;
             this.bnuevo.Text = "Nuevo";
             this.bnuevo.UseVisualStyleBackColor = true;
@@ -192,54 +188,13 @@ namespace Segundo_Parcial
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(259, 236);
+            this.bactualizar.Location = new System.Drawing.Point(184, 226);
             this.bactualizar.Name = "bactualizar";
-            this.bactualizar.Size = new System.Drawing.Size(80, 30);
+            this.bactualizar.Size = new System.Drawing.Size(80, 35);
             this.bactualizar.TabIndex = 17;
             this.bactualizar.Text = "Actualizar";
             this.bactualizar.UseVisualStyleBackColor = true;
             this.bactualizar.Click += new System.EventHandler(this.bactualizar_Click);
-            // 
-            // bprimero
-            // 
-            this.bprimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bprimero.Location = new System.Drawing.Point(86, 200);
-            this.bprimero.Name = "bprimero";
-            this.bprimero.Size = new System.Drawing.Size(80, 30);
-            this.bprimero.TabIndex = 18;
-            this.bprimero.Text = "Primero";
-            this.bprimero.UseVisualStyleBackColor = true;
-            // 
-            // banterior
-            // 
-            this.banterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.banterior.Location = new System.Drawing.Point(172, 200);
-            this.banterior.Name = "banterior";
-            this.banterior.Size = new System.Drawing.Size(80, 30);
-            this.banterior.TabIndex = 19;
-            this.banterior.Text = "Anterior";
-            this.banterior.UseVisualStyleBackColor = true;
-            // 
-            // bsiguiente
-            // 
-            this.bsiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsiguiente.Location = new System.Drawing.Point(259, 200);
-            this.bsiguiente.Name = "bsiguiente";
-            this.bsiguiente.Size = new System.Drawing.Size(80, 30);
-            this.bsiguiente.TabIndex = 20;
-            this.bsiguiente.Text = "Siguiente";
-            this.bsiguiente.UseVisualStyleBackColor = true;
-            this.bsiguiente.Click += new System.EventHandler(this.bsiguiente_Click);
-            // 
-            // bultimo
-            // 
-            this.bultimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bultimo.Location = new System.Drawing.Point(344, 200);
-            this.bultimo.Name = "bultimo";
-            this.bultimo.Size = new System.Drawing.Size(80, 30);
-            this.bultimo.TabIndex = 21;
-            this.bultimo.Text = "Ultimo";
-            this.bultimo.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -283,7 +238,7 @@ namespace Segundo_Parcial
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(516, 207);
+            this.txtbuscar.Location = new System.Drawing.Point(527, 235);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 20);
             this.txtbuscar.TabIndex = 8;
@@ -406,10 +361,6 @@ namespace Segundo_Parcial
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.bultimo);
-            this.Controls.Add(this.bsiguiente);
-            this.Controls.Add(this.banterior);
-            this.Controls.Add(this.bprimero);
             this.Controls.Add(this.bactualizar);
             this.Controls.Add(this.bnuevo);
             this.Controls.Add(this.label3);
@@ -449,10 +400,6 @@ namespace Segundo_Parcial
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bnuevo;
         private System.Windows.Forms.Button bactualizar;
-        private System.Windows.Forms.Button bprimero;
-        private System.Windows.Forms.Button banterior;
-        private System.Windows.Forms.Button bsiguiente;
-        private System.Windows.Forms.Button bultimo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
