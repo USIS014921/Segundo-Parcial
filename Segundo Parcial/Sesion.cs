@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Segundo_Parcial
 {
-    public partial class Inicio : Form
+    public partial class Sesion : Form
     {
-        public Inicio()
+        public Sesion()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Segundo_Parcial
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            MySql form1 = new MySql();
             form1.Show();
             this.Hide();
         }

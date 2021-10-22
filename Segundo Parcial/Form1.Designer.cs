@@ -1,7 +1,7 @@
 ﻿
 namespace Segundo_Parcial
 {
-    partial class Form1
+    partial class MySql
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace Segundo_Parcial
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MySql));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bguardar = new System.Windows.Forms.Button();
             this.beliminar = new System.Windows.Forms.Button();
@@ -62,7 +62,7 @@ namespace Segundo_Parcial
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(61, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(124, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,7 +148,7 @@ namespace Segundo_Parcial
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(248, 12);
+            this.label1.Location = new System.Drawing.Point(209, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 12;
@@ -158,7 +158,7 @@ namespace Segundo_Parcial
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(262, 43);
+            this.label2.Location = new System.Drawing.Point(223, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 13;
@@ -168,7 +168,7 @@ namespace Segundo_Parcial
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(266, 67);
+            this.label3.Location = new System.Drawing.Point(227, 58);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 14;
@@ -200,7 +200,7 @@ namespace Segundo_Parcial
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(240, 92);
+            this.label4.Location = new System.Drawing.Point(201, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 25;
@@ -210,7 +210,7 @@ namespace Segundo_Parcial
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(255, 118);
+            this.label5.Location = new System.Drawing.Point(216, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 26;
@@ -220,7 +220,7 @@ namespace Segundo_Parcial
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(267, 147);
+            this.label6.Location = new System.Drawing.Point(228, 138);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 27;
@@ -230,7 +230,7 @@ namespace Segundo_Parcial
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(265, 175);
+            this.label7.Location = new System.Drawing.Point(226, 166);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 16);
             this.label7.TabIndex = 28;
@@ -245,7 +245,7 @@ namespace Segundo_Parcial
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(329, 12);
+            this.txtusuario.Location = new System.Drawing.Point(290, 3);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 29;
@@ -253,21 +253,21 @@ namespace Segundo_Parcial
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(329, 38);
+            this.txtclave.Location = new System.Drawing.Point(290, 29);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(100, 20);
             this.txtclave.TabIndex = 30;
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(329, 91);
+            this.txttelefono.Location = new System.Drawing.Point(290, 82);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(100, 20);
             this.txttelefono.TabIndex = 31;
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(329, 117);
+            this.txtcorreo.Location = new System.Drawing.Point(290, 108);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(100, 20);
             this.txtcorreo.TabIndex = 32;
@@ -278,7 +278,7 @@ namespace Segundo_Parcial
             this.lstedad.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.lstedad.Location = new System.Drawing.Point(329, 143);
+            this.lstedad.Location = new System.Drawing.Point(290, 134);
             this.lstedad.Name = "lstedad";
             this.lstedad.Size = new System.Drawing.Size(100, 21);
             this.lstedad.TabIndex = 33;
@@ -297,7 +297,7 @@ namespace Segundo_Parcial
             "8",
             "9",
             "10"});
-            this.lstnivel.Location = new System.Drawing.Point(329, 64);
+            this.lstnivel.Location = new System.Drawing.Point(290, 55);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 34;
@@ -339,16 +339,17 @@ namespace Segundo_Parcial
             "48\t",
             "49\t",
             "50"});
-            this.lstsexo.Location = new System.Drawing.Point(329, 170);
+            this.lstsexo.Location = new System.Drawing.Point(290, 161);
             this.lstsexo.Name = "lstsexo";
             this.lstsexo.Size = new System.Drawing.Size(100, 21);
             this.lstsexo.TabIndex = 35;
+            this.lstsexo.SelectedIndexChanged += new System.EventHandler(this.lstsexo_SelectedIndexChanged);
             // 
-            // Form1
+            // MySql
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Turquoise;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.ClientSize = new System.Drawing.Size(845, 513);
             this.Controls.Add(this.lstsexo);
             this.Controls.Add(this.lstnivel);
@@ -375,8 +376,8 @@ namespace Segundo_Parcial
             this.Controls.Add(this.beliminar);
             this.Controls.Add(this.bguardar);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MySql";
+            this.Text = "MySql";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

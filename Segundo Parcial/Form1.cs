@@ -12,13 +12,13 @@ using MySql.Data.MySqlClient;
 
 namespace Segundo_Parcial
 {
-    public partial class Form1 : Form
+    public partial class MySql : Form
     {
         public string cadena_conexion = "Database = parcial2; DataSource = localhost; User Id = Joan; Password = 12902";
         public string usuario_modificar;
         public string usuario_eliminar;
 
-        public Form1()
+        public MySql()
         {
             InitializeComponent();
         }
@@ -90,8 +90,8 @@ namespace Segundo_Parcial
                 myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
                 myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = txttelefono.Text;
                 myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
-                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstedad.Text;
-                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstsexo.Text;
+                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstsexo.Text;
+                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstedad.Text;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -152,8 +152,8 @@ namespace Segundo_Parcial
                 string niv = lstnivel.Text;
                 string tel = txttelefono.Text.ToString();
                 string cor = txtcorreo.Text.ToString();
-                string sex = lstsexo.Text;
                 string eda = lstedad.Text;
+                string sex = lstsexo.Text;
 
                 string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
 
@@ -305,7 +305,7 @@ namespace Segundo_Parcial
 
         private void bentrar_Click(object sender, EventArgs e)
         {
-            Inicio inicio = new Inicio();
+            Sesion inicio = new Sesion();
             inicio.Show();
             this.Hide();
         }
@@ -321,6 +321,11 @@ namespace Segundo_Parcial
         }
 
         private void txtusuario_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstsexo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

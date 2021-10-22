@@ -1,7 +1,7 @@
 ﻿
 namespace Segundo_Parcial
 {
-    partial class Inicio
+    partial class Sesion
     {
         /// <summary>
         /// Required designer variable.
