@@ -46,15 +46,28 @@ namespace Segundo_Parcial
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.txtcorreo = new System.Windows.Forms.TextBox();
-            this.lstedad = new System.Windows.Forms.ComboBox();
-            this.lstnivel = new System.Windows.Forms.ComboBox();
             this.lstsexo = new System.Windows.Forms.ComboBox();
+            this.lstnivel = new System.Windows.Forms.ComboBox();
+            this.txtsueldo = new System.Windows.Forms.TextBox();
+            this.txtpuesto = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dtfecha = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtisss = new System.Windows.Forms.TextBox();
+            this.txtafp = new System.Windows.Forms.TextBox();
+            this.txtnit = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtdui = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -118,7 +131,7 @@ namespace Segundo_Parcial
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 277);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(821, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(615, 228);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -148,7 +161,7 @@ namespace Segundo_Parcial
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(209, 3);
+            this.label1.Location = new System.Drawing.Point(207, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 12;
@@ -158,7 +171,7 @@ namespace Segundo_Parcial
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(223, 34);
+            this.label2.Location = new System.Drawing.Point(221, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 13;
@@ -168,7 +181,7 @@ namespace Segundo_Parcial
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(227, 58);
+            this.label3.Location = new System.Drawing.Point(225, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 14;
@@ -188,7 +201,7 @@ namespace Segundo_Parcial
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(184, 226);
+            this.bactualizar.Location = new System.Drawing.Point(183, 226);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(80, 35);
             this.bactualizar.TabIndex = 17;
@@ -200,7 +213,7 @@ namespace Segundo_Parcial
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(201, 83);
+            this.label4.Location = new System.Drawing.Point(199, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 25;
@@ -210,7 +223,7 @@ namespace Segundo_Parcial
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(216, 109);
+            this.label5.Location = new System.Drawing.Point(214, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 26;
@@ -220,21 +233,11 @@ namespace Segundo_Parcial
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(228, 138);
+            this.label6.Location = new System.Drawing.Point(226, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 27;
             this.label6.Text = "Sexo:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(226, 166);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 16);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Edad:";
             // 
             // txtbuscar
             // 
@@ -245,7 +248,7 @@ namespace Segundo_Parcial
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(290, 3);
+            this.txtusuario.Location = new System.Drawing.Point(288, 13);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 29;
@@ -253,35 +256,36 @@ namespace Segundo_Parcial
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(290, 29);
+            this.txtclave.Location = new System.Drawing.Point(288, 39);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(100, 20);
             this.txtclave.TabIndex = 30;
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(290, 82);
+            this.txttelefono.Location = new System.Drawing.Point(288, 92);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(100, 20);
             this.txttelefono.TabIndex = 31;
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(290, 108);
+            this.txtcorreo.Location = new System.Drawing.Point(288, 118);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(100, 20);
             this.txtcorreo.TabIndex = 32;
             // 
-            // lstedad
+            // lstsexo
             // 
-            this.lstedad.FormattingEnabled = true;
-            this.lstedad.Items.AddRange(new object[] {
+            this.lstsexo.FormattingEnabled = true;
+            this.lstsexo.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.lstedad.Location = new System.Drawing.Point(290, 134);
-            this.lstedad.Name = "lstedad";
-            this.lstedad.Size = new System.Drawing.Size(100, 21);
-            this.lstedad.TabIndex = 33;
+            this.lstsexo.Location = new System.Drawing.Point(288, 144);
+            this.lstsexo.Name = "lstsexo";
+            this.lstsexo.Size = new System.Drawing.Size(100, 21);
+            this.lstsexo.TabIndex = 33;
+            this.lstsexo.SelectedIndexChanged += new System.EventHandler(this.lstedad_SelectedIndexChanged_1);
             // 
             // lstnivel
             // 
@@ -297,68 +301,168 @@ namespace Segundo_Parcial
             "8",
             "9",
             "10"});
-            this.lstnivel.Location = new System.Drawing.Point(290, 55);
+            this.lstnivel.Location = new System.Drawing.Point(288, 65);
             this.lstnivel.Name = "lstnivel";
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 34;
             // 
-            // lstsexo
+            // txtsueldo
             // 
-            this.lstsexo.FormattingEnabled = true;
-            this.lstsexo.Items.AddRange(new object[] {
-            "18\t",
-            "19\t",
-            "20",
-            "21\t",
-            "22\t",
-            "23\t",
-            "24\t",
-            "25\t",
-            "26\t",
-            "27\t",
-            "28\t",
-            "29\t",
-            "30",
-            "31\t",
-            "32\t",
-            "33\t",
-            "34\t",
-            "35\t",
-            "36\t",
-            "37\t",
-            "38\t",
-            "39\t",
-            "40",
-            "41\t",
-            "42\t",
-            "43\t",
-            "44\t",
-            "45\t",
-            "46\t",
-            "47\t",
-            "48\t",
-            "49\t",
-            "50"});
-            this.lstsexo.Location = new System.Drawing.Point(290, 161);
-            this.lstsexo.Name = "lstsexo";
-            this.lstsexo.Size = new System.Drawing.Size(100, 21);
-            this.lstsexo.TabIndex = 35;
-            this.lstsexo.SelectedIndexChanged += new System.EventHandler(this.lstsexo_SelectedIndexChanged);
+            this.txtsueldo.Location = new System.Drawing.Point(474, 143);
+            this.txtsueldo.Name = "txtsueldo";
+            this.txtsueldo.Size = new System.Drawing.Size(100, 20);
+            this.txtsueldo.TabIndex = 136;
+            // 
+            // txtpuesto
+            // 
+            this.txtpuesto.Location = new System.Drawing.Point(474, 117);
+            this.txtpuesto.Name = "txtpuesto";
+            this.txtpuesto.Size = new System.Drawing.Size(100, 20);
+            this.txtpuesto.TabIndex = 135;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(411, 149);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 15);
+            this.label14.TabIndex = 134;
+            this.label14.Text = "Sueldo:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(412, 122);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 15);
+            this.label13.TabIndex = 133;
+            this.label13.Text = "Puesto:";
+            // 
+            // dtfecha
+            // 
+            this.dtfecha.Location = new System.Drawing.Point(474, 91);
+            this.dtfecha.Name = "dtfecha";
+            this.dtfecha.Size = new System.Drawing.Size(100, 20);
+            this.dtfecha.TabIndex = 132;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(412, 95);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 131;
+            this.label12.Text = "Fecha:";
+            // 
+            // txtisss
+            // 
+            this.txtisss.Location = new System.Drawing.Point(474, 64);
+            this.txtisss.Name = "txtisss";
+            this.txtisss.Size = new System.Drawing.Size(100, 20);
+            this.txtisss.TabIndex = 130;
+            // 
+            // txtafp
+            // 
+            this.txtafp.Location = new System.Drawing.Point(474, 38);
+            this.txtafp.Name = "txtafp";
+            this.txtafp.Size = new System.Drawing.Size(100, 20);
+            this.txtafp.TabIndex = 129;
+            // 
+            // txtnit
+            // 
+            this.txtnit.Location = new System.Drawing.Point(474, 12);
+            this.txtnit.Name = "txtnit";
+            this.txtnit.Size = new System.Drawing.Size(100, 20);
+            this.txtnit.TabIndex = 128;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(430, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 16);
+            this.label11.TabIndex = 127;
+            this.label11.Text = "AFP:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(425, 69);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 16);
+            this.label10.TabIndex = 126;
+            this.label10.Text = "ISSS:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(430, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 16);
+            this.label9.TabIndex = 125;
+            this.label9.Text = "NIT:";
+            // 
+            // txtdui
+            // 
+            this.txtdui.Location = new System.Drawing.Point(288, 171);
+            this.txtdui.Name = "txtdui";
+            this.txtdui.Size = new System.Drawing.Size(100, 20);
+            this.txtdui.TabIndex = 138;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(235, 175);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 16);
+            this.label8.TabIndex = 137;
+            this.label8.Text = "DUI:";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(547, 187);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 32);
+            this.button1.TabIndex = 139;
+            this.button1.Text = "Consulta";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MySql
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(845, 513);
-            this.Controls.Add(this.lstsexo);
+            this.ClientSize = new System.Drawing.Size(639, 513);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtdui);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtsueldo);
+            this.Controls.Add(this.txtpuesto);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.dtfecha);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtisss);
+            this.Controls.Add(this.txtafp);
+            this.Controls.Add(this.txtnit);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.lstnivel);
-            this.Controls.Add(this.lstedad);
+            this.Controls.Add(this.lstsexo);
             this.Controls.Add(this.txtcorreo);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtusuario);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -404,15 +508,28 @@ namespace Segundo_Parcial
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.TextBox txtcorreo;
-        private System.Windows.Forms.ComboBox lstedad;
-        private System.Windows.Forms.ComboBox lstnivel;
         private System.Windows.Forms.ComboBox lstsexo;
+        private System.Windows.Forms.ComboBox lstnivel;
+        private System.Windows.Forms.TextBox txtsueldo;
+        private System.Windows.Forms.TextBox txtpuesto;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dtfecha;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtisss;
+        private System.Windows.Forms.TextBox txtafp;
+        private System.Windows.Forms.TextBox txtnit;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtdui;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }
 

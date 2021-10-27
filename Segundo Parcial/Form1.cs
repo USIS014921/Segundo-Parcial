@@ -30,10 +30,16 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
-            bactualizar.Visible = false;
+            txtdui.Enabled = false;
+            txtnit.Enabled = false;
+            txtafp.Enabled = false;
+            txtisss.Enabled = false;
+            dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
 
+            bactualizar.Visible = false;
             try
             {
                 String consulta = "Select * from usuarios ";
@@ -62,15 +68,27 @@ namespace Segundo_Parcial
             lstnivel.Enabled = true;
             txttelefono.Enabled = true;
             txtcorreo.Enabled = true;
-            lstedad.Enabled = true;
             lstsexo.Enabled = true;
+            txtdui.Enabled = true;
+            txtnit.Enabled = true;
+            txtafp.Enabled = true;
+            txtisss.Enabled = true;
+            dtfecha.Enabled = true;
+            txtpuesto.Enabled = true;
+            txtsueldo.Enabled = true;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstedad.Text = "Selecione su genero";
-            lstsexo.Text = "Indique su edad";
+            lstsexo.Text = "Selecione su genero";
+            txtdui.Text = "";
+            txtnit.Text = "";
+            txtafp.Text = "";
+            txtisss.Text = "";
+            dtfecha.Text = "";
+            txtpuesto.Text = "";
+            txtsueldo.Text = "";
             txtusuario.Focus();
 
             bnuevo.Visible = false;
@@ -82,16 +100,22 @@ namespace Segundo_Parcial
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios(usuario,clave,nivel,telefono,correo,sexo,edad) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?edad)";
+                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,dui,nit,afp,isss,fecha,puesto,sueldo) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?dui,?nit,?afp,?isss,?fecha,?puesto,?sueldo)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-                
-                myCommand.Parameters.Add("?usuario", MySqlDbType.VarChar, 75).Value = txtusuario.Text;
-                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 20).Value = txtclave.Text;
-                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = txttelefono.Text;
-                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
-                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstsexo.Text;
-                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstedad.Text;
+
+                myCommand.Parameters.Add("?usuario", txtusuario.Text);
+                myCommand.Parameters.Add("?clave", txtclave.Text);
+                myCommand.Parameters.Add("?nivel", lstnivel.Text);
+                myCommand.Parameters.Add("?telefono", txttelefono.Text);
+                myCommand.Parameters.Add("?correo", txtcorreo.Text);
+                myCommand.Parameters.Add("?sexo", lstsexo.Text);
+                myCommand.Parameters.Add("?dui", txtdui.Text);
+                myCommand.Parameters.Add("?nit", txtnit.Text);
+                myCommand.Parameters.Add("?afp", txtafp.Text);
+                myCommand.Parameters.Add("?isss", txtisss.Text);
+                myCommand.Parameters.Add("?fecha", dtfecha.Text);
+                myCommand.Parameters.Add("?puesto", txtpuesto.Text);
+                myCommand.Parameters.Add("?sueldo", txtsueldo.Text);
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -121,8 +145,14 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
+            txtdui.Enabled = false;
+            txtnit.Enabled = false;
+            txtafp.Enabled = false;
+            txtisss.Enabled = false;
+            dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
             bnuevo.Focus();
         }
 
@@ -133,8 +163,14 @@ namespace Segundo_Parcial
             lstnivel.Enabled = true;
             txttelefono.Enabled = true;
             txtcorreo.Enabled = true;
-            lstedad.Enabled = true;
             lstsexo.Enabled = true;
+            txtdui.Enabled = true;
+            txtnit.Enabled = true;
+            txtafp.Enabled = true;
+            txtisss.Enabled = true;
+            dtfecha.Enabled = true;
+            txtpuesto.Enabled = true;
+            txtsueldo.Enabled = true;
             txtusuario.Focus();
 
             bmodificar.Visible = false;
@@ -152,21 +188,28 @@ namespace Segundo_Parcial
                 string niv = lstnivel.Text;
                 string tel = txttelefono.Text.ToString();
                 string cor = txtcorreo.Text.ToString();
-                string eda = lstedad.Text;
                 string sex = lstsexo.Text;
+                string dui = txtdui.Text.ToString();
+                string nit = txtnit.Text.ToString();
+                string afp = txtafp.Text.ToString();
+                string isss = txtisss.Text.ToString();
+                string fec = dtfecha.Text.ToString();
+                string pues = txtpuesto.Text.ToString();
+                string suel = txtsueldo.Text.ToString();
 
-                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "' WHERE usuario = '" + usuario_modificar +"'";
+
+                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',dui = '" + dui + "',nit = '" + nit + "',afp = '" + afp + "',isss = '" + isss + "',fecha = '" + fec + "',puesto = '" + pues + "',sueldo = '" + suel + "'  WHERE usuario = '" + usuario_modificar + "'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-               
+
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
-                MessageBox.Show("Usuario Actualizado con éxito", "Ok",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                MessageBox.Show("Usuario Actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 string consulta = "select * from usuarios";
-                
+
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
@@ -176,7 +219,7 @@ namespace Segundo_Parcial
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Error al Actualizar el usuario", "Alerta!",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Actualizar el usuario", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             bmodificar.Visible = true;
@@ -187,8 +230,15 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
+            txtdui.Enabled = false;
+            txtnit.Enabled = false;
+            txtafp.Enabled = false;
+            txtisss.Enabled = false;
+            dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
+
             bmodificar.Focus();
         }
 
@@ -210,8 +260,14 @@ namespace Segundo_Parcial
                     lstnivel.Text = (myReader.GetString(3));
                     txttelefono.Text = (myReader.GetString(4));
                     txtcorreo.Text = (myReader.GetString(5));
-                    lstedad.Text = (myReader.GetString(6));
-                    lstsexo.Text = (myReader.GetString(7));
+                    lstsexo.Text = (myReader.GetString(6));
+                    txtdui.Text = (myReader.GetString(7));
+                    txtnit.Text = (myReader.GetString(8));
+                    txtafp.Text = (myReader.GetString(9));
+                    txtisss.Text = (myReader.GetString(10));
+                    dtfecha.Text = (myReader.GetString(11));
+                    txtpuesto.Text = (myReader.GetString(12));
+                    txtsueldo.Text = (myReader.GetString(13));
 
                 }
                 else
@@ -224,7 +280,7 @@ namespace Segundo_Parcial
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Campo de busqueda esta vasio", "Alerta!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Campo de busqueda esta vasio", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             bnuevo.Visible = true;
@@ -235,10 +291,16 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
+            txtdui.Enabled = false;
+            txtnit.Enabled = false;
+            txtafp.Enabled = false;
+            txtisss.Enabled = false;
+            dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
 
-            bmodificar.Focus(); 
+            bmodificar.Focus();
         }
 
         private void beliminar_Click(object sender, EventArgs e)
@@ -252,7 +314,7 @@ namespace Segundo_Parcial
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
-                MessageBox.Show("Usuario eliminado con éxito", "Ok",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Usuario eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 string consulta = "select * from usuarios";
 
@@ -276,15 +338,27 @@ namespace Segundo_Parcial
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
+            txtdui.Enabled = false;
+            txtnit.Enabled = false;
+            txtafp.Enabled = false;
+            txtisss.Enabled = false;
+            dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstedad.Text = "Selecione su genero";
-            lstsexo.Text = "Indique su edad";
+            lstsexo.Text = "Selecione su genero";
+            txtdui.Text = "";
+            txtnit.Text = "";
+            txtafp.Text = "";
+            txtisss.Text = "";
+            dtfecha.Text = "";
+            txtpuesto.Text = "";
+            txtsueldo.Text = "";
             txtbuscar.Focus();
         }
 
@@ -328,6 +402,18 @@ namespace Segundo_Parcial
         private void lstsexo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lstedad_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            consulta.Show();
+            this.Hide();
         }
     }
 }
